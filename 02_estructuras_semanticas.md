@@ -2,7 +2,7 @@
 Estructura básica de una página en HTML5
 ----------------------------------------
 
-En HTM la estructura interna básica de una página web se ha simplificado, reduciendo el código innecesario hasta quedarse con el esqueleto básico, que sería el siguiente:
+En HTML la estructura interna básica de una página web se ha simplificado, reduciendo el código innecesario hasta quedarse con el esqueleto básico, que sería el siguiente:
 
 ```
  <!doctype html>
@@ -116,21 +116,15 @@ Una de las novedades de HTML5, aparte de disponer de esta misma caja genérica <
 
   
 
-<
-
-div
----
-
-\> caja genérica </div>
+div (caja genérica)
+-----------------
 
 <div> es el tipo de caja genérica, que aunque no identifica qué tipo de contenido contiene, sigue siendo la más utilizada. No obstante suele estar ubicada dentro de cajas que sí tienen un significado semántico concreto como las que siguen...
 
-<
 
-main
+
+main (contenido principal de la página)
 ----
-
-\> contenido principal de la página </main>
 
 <main> es la caja que contiene todo el contenido principal de la página, con las siguientes características:
 
@@ -138,21 +132,15 @@ main
 *   No puede estar dentro de ninguna otra caja.
 *   Dentro contendrá aquel contenido que no se repita en cada página (conteniendo <div>, <section>, <article> o incluso <aside>), pero nunca cajas como <header>, <nav> o <footer>).
 
-<
 
-header
-------
-
-\> encabezado </header>
+header (encabezado)
+-------------------
 
 Dentro de la caja <header> ubicamos el contenido que estaría destinado al encabezado de la página. Normalmente contiene el logo y el nombre de la página y suele estar ubicado al inicio.
 
-<
 
-footer
-------
-
-\> pie de página </footer>
+footer (pie de página)
+----------------------
 
 La caja <footer> contiene la información que figura al pie de la página (normalmente es la última caja de todas) y es donde se ubica el ©, e información como el mapa de la página, autor, fecha y otros datos finales.
 
@@ -160,12 +148,8 @@ Actualmente existe la tendencia de hacer <footer> enormes donde figura todo lo q
 
 La caja <nav> contiene todos los enlaces de la página, ya sea a otras secciones de nuestro mismo sitio web o a páginas externas. Por ello, en algunos casos pueden existir varios <nav>, como por ejemplo el del principio de la página y otro final ubicado dentro del <footer>
 
-<
-
-section
--------
-
-\> sección de información </section>
+section (sección de información)
+--------------------------------
 
 Las cajas <section> contienen el contenido genérico de la página.
 
@@ -173,30 +157,20 @@ Las cajas <section> contienen el contenido genérico de la página.
 *   Pueden contener múltiples <div> y otras cajas relacionadas, como <article>.
 *   Normalmente se utilizan para grandes cantidades o secciones de información de tipo similar.
 
-<
-
-article
--------
-
-\> artículo </article>
+article (artículo)
+------------------
 
 Las cajas <article> también están destinadas a contener el contenido de la página, aunque normalmente suelen utilizarse para mostrar información más reducida y concreta y que puede ser independiente del resto.
 
-<
 
-aside
------
-
-\> contenido </aside>
+aside (contenido)
+-----------------
 
 Dentro de las cajas de tipo <aside> se ubican los contenidos que no tienen relación directa con el contenido, como por ejemplo información sobre vacunas o pasaportes en una web de viajes, calendario de eventos de una entidad, publicidad o la biografía del autor de un blog.
 
-<
 
-figure
-------
-
-\> imagen </figure>
+figure (imagen)
+---------------
 
 Aunque <figure> no tiene las mismas funcionalidades ni características que el resto de cajas, tiene como objetivo contener imágenes que opcionalmente pueden tener vinculadas un pie de imágen (información más detallada en el tema [figure y figcaption](https://www.html6.es/t1_4_imagenes.html#punto3)).
 
