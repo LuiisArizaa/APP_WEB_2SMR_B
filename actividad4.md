@@ -1,26 +1,30 @@
-4\. Crea una página web utilizando contenido incrustado y marcadores
----------------------------------------------------------------------------------------------
+2\. Crea un formulario de registro
+-----------------------------------------------------------
 
-Crea una página web que incluya las siguientes características:
+Crea una página de registro en HTML que recoja información detallada de los usuarios. La página debe contener los siguientes campos:
 
-Utiliza la etiqueta `<img>` para mostrar una imagen en tu página. Debes incluir los siguientes atributos:
+**Información Personal:**
 
-*   `src`: Especifica la URL o la ruta de la imagen que deseas mostrar.
-*   `alt`: Proporciona un texto alternativo para la imagen en caso de que no se cargue correctamente.
-*   `width`: Establece el ancho de la imagen en píxeles.
-*   `height`: Establece la altura de la imagen en píxeles.
+*   Nombre (Campo de texto, requerido)
+*   Apellido (Campo de texto, requerido)
+*   Fecha de Nacimiento (Campo de fecha, requerido)
+*   Género (Selector de tipo radio: Masculino, Femenino, Otro, requerido)
 
-Inserta un video de YouTube en tu página. Para ello, debes utilizar la etiqueta `<iframe>`. Asegúrate de seguir estos pasos:
+**Información de Contacto:**
 
-*   Ve al video de YouTube que deseas insertar.
-*   Haz clic en el botón «Compartir» debajo del video.
-*   Selecciona la opción «Insertar».
-*   Copia el código HTML proporcionado por YouTube y pégalo en tu página.
+*   Dirección de Correo Electrónico (Campo de correo electrónico, requerido)
+*   Número de Teléfono (Campo de teléfono, requerido)
+*   Dirección (Campo de texto de varias líneas)
 
-Agrega un título o encabezado a tu página utilizando la etiqueta `<h1>`. Elige un título relevante para tu página.
+**Información de Cuenta:**
 
-Utiliza marcadores para crear enlaces internos que permitan a los usuarios navegar rápidamente entre la imagen y el video. Para ello, utiliza la etiqueta `<a>` con el atributo `href` que apunte a los marcadores.
+*   Nombre de Usuario (Campo de texto, requerido)
+*   Contraseña (Campo de contraseña, requerido)
+*   Confirmación de Contraseña (Campo de contraseña para confirmar, requerido)
 
-Incluye las etiquetas para la metainformación, como `<meta name="description" content="Descripción de la página">` y `<meta name="author" content="Tu Nombre">`.
+**Preferencias:**
 
-Puedes agregar cualquier otro contenido o texto que desees en tu página para darle contexto.
+*   Seleccionar un Color Favorito (Selector de tipo select: Rojo, Azul, Verde, Amarillo)
+*   Aceptar Términos y Condiciones (Selector de tipo checkbox, requerido)
+
+Utiliza etiquetas `fieldset` y `legend` para agrupar y describir secciones de formulario. Asegúrate de que los campos marcados como «requeridos» deben ser completados antes de enviar el formulario. Enlaza cada etiqueta `<label>` con su campo de entrada correspondiente utilizando los atributos `for` e `id` para mejorar la accesibilidad.
