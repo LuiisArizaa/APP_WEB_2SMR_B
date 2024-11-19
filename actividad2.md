@@ -19,8 +19,6 @@ Inserta un video de YouTube en tu página. Para ello, debes utilizar la etiqueta
 
 Agrega un título o encabezado a tu página utilizando la etiqueta `<h1>`. Elige un título relevante para tu página.
 
-Utiliza marcadores para crear enlaces internos que permitan a los usuarios navegar rápidamente entre la imagen y el video. Para ello, utiliza la etiqueta `<a>` con el atributo `href` que apunte a los marcadores.
-
 Incluye las etiquetas para la metainformación, como `<meta name="description" content="Descripción de la página">` y `<meta name="author" content="Tu Nombre">`.
 
 Puedes agregar cualquier otro contenido o texto que desees en tu página para darle contexto.
