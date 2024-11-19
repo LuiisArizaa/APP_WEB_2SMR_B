@@ -1,4 +1,4 @@
-4\. Crea una página web utilizando contenido incrustado y marcadores
+2\. Crea una página web utilizando contenido incrustado y marcadores
 ---------------------------------------------------------------------------------------------
 
 Crea una página web que incluya las siguientes características:

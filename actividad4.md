@@ -1,4 +1,4 @@
-2\. Crea un formulario de registro
+4\. Crea un formulario de registro
 -----------------------------------------------------------
 
 Crea una página de registro en HTML que recoja información detallada de los usuarios. La página debe contener los siguientes campos:

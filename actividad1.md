@@ -23,7 +23,7 @@ Crea una página web HTML que cumpla con las siguientes especificaciones:
     *   `<p>Somos una empresa dedicada a ofrecer soluciones web.</p>`
 *   Una sección `<section>` con:
     *   `<h2>Nuestros Servicios</h2>`
-    *  Una lista ordenada <ol> con tres elementos <li> que describan los servicios que ofrece tu empresa. Las viñetas deben ser de tipo abecedario.
+    *  Una lista ordenada ``<ol>`` con tres elementos ``<li>`` que describan los servicios que ofrece tu empresa. Las viñetas deben ser de tipo abecedario.
 
 **Pie de Página:** Crea un pie de página `<footer>` con dos enlaces:
 *   Incluye el carácter especial «©» seguido del nombre de tu empresa para indicar «Todos los derechos reservados». Utiliza entidades, código hexadecimal o decimal para incluir el carácter especial
