@@ -19,7 +19,7 @@ El principio y final de un formulario se define con las etiquetas `<form>` y `</
 ```
 
 
-4.1. Atributos de la etiqueta `form`
+Atributos de la etiqueta `form`
 ------------------------------------
 
 El atributo _action_ en un elemento `<form>` especifica la URL o ruta a la cual se enviarán los datos del formulario cuando este sea enviado. Por otro lado, el atributo _method_ define el método HTTP que se utilizará para enviar los datos del formulario.
@@ -41,7 +41,7 @@ El atributo _method_ puede ser «_GET_» o «_POST_» y determina el método HTT
 
 *   _**POST**_: Los datos del formulario se envían en el cuerpo de la solicitud HTTP de manera más segura y no se muestran en la URL. Es adecuado para enviar datos sensibles, como contraseñas o información personal.
 
-4.2. Etiquetas para la creación de formularios
+Etiquetas para la creación de formularios
 ----------------------------------------------
 
 HTML5 dispone de un gran número de elementos de formulario como puedes ver en la siguiente tabla.
@@ -61,9 +61,7 @@ HTML5 dispone de un gran número de elementos de formulario como puedes ver en l
 |`<datalist>`|Se utiliza junto con la etiqueta `<input>` para proporcionar una lista de opciones `<option>` que ayudan a los usuarios a seleccionar un valor mientras escriben en un campo de entrada `<input>`|
 |`<textarea>`|Representa una caja de edición de texto en varias líneas|
 
-**Tabla 4.1.** Etiquetas para la creación de formularios
-
-Ejemplo
+## Ejemplo
 
 ```
 <form>
@@ -118,7 +116,7 @@ Ejemplo
 </form>
 ```
 
-### 4.2.1. Etiquetas `<fieldset>` y `<legend>`
+### Etiquetas `<fieldset>` y `<legend>`
 
 Las etiquetas `<fieldset>` y `<legend>` se utilizan para agrupar elementos de formulario relacionados y proporcionar un título o leyenda descriptiva para el grupo.
 
@@ -152,7 +150,7 @@ En este ejemplo, la etiqueta `<fieldset>` envuelve el grupo de elementos de form
 
 El uso de las etiquetas `<fieldset>` y `<legend>` ayuda a mejorar la accesibilidad y usabilidad de los formularios al proporcionar una estructura clara y agrupación visual de campos relacionados. También mejora el estilo general y la organización del formulario.
 
-### 4.2.2. Etiqueta `<label>`
+### Etiqueta `<label>`
 
 La etiqueta `<label>` ayuda a asociar una descripción de texto con un campo de entrada de formulario, lo que lo hace más accesible y fácil de usar. Ejemplo:
 
@@ -166,7 +164,7 @@ En este ejemplo, la etiqueta `<label>` se utiliza para crear una etiqueta para e
 
 Cuando un usuario hace clic en la etiqueta, el campo de entrada correspondiente se enfoca o activa. Esto mejora la usabilidad y accesibilidad, ya que los usuarios pueden hacer clic en el texto de la etiqueta en lugar de hacer clic directamente en el campo de entrada.
 
-### 4.2.3. Etiqueta `<input>`
+### Etiqueta `<input>`
 
 La etiqueta `<input>` en HTML se utiliza para crear campos de entrada en un formulario que permiten a los usuarios ingresar datos. El tipo de dato que se ingresa depende del valor del atributo `type` de la etiqueta `<input>`. Veamos algunos ejemplos comunes de cómo se utiliza la etiqueta `<input>` en un formulario:
 
@@ -201,13 +199,11 @@ La etiqueta `<input>` en HTML se utiliza para crear campos de entrada en un form
    <label for="opcion2">Opción 2</label>
 ```
 
-
 5.  **Botón (Button)**: Crea un botón que puede utilizarse para enviar un formulario o realizar otras acciones mediante JavaScript.
 
 ```
    <input type="button" value="Enviar" onclick="enviarFormulario()">
 ```
-
 
 6.  **Campo de correo electrónico**: Ayuda a validar que se inserte una dirección de correo electrónico válida.
 
@@ -221,9 +217,9 @@ La etiqueta `<input>` en HTML se utiliza para crear campos de entrada en un form
    <input type="number" id="edad" name="edad" min="18" max="99" placeholder="Edad">
 ```
 
-Estos son solo algunos ejemplos de cómo se puede utilizar la etiqueta `<input>` en un formulario HTML. En el punto 4.3 veremos en detalle los atributos del elemento `<input>`.
+Estos son solo algunos ejemplos de cómo se puede utilizar la etiqueta `<input>` en un formulario HTML. 
 
-### 4.2.4. Etiqueta `<button>`
+### Etiqueta `<button>`
 
 La etiqueta `<button>` en HTML se utiliza para crear un botón. Puede ser utilizado para activar una acción o comportamiento específico al ser clicado.
 
@@ -242,7 +238,7 @@ También puedes utilizar el atributo _type_ para definir el tipo de botón. Algu
 ```
 
 
-### 4.2.5. Diferencias entre `<input>` y `<button>`
+### Diferencias entre `<input>` y `<button>`
 
 Los elementos `<input>` y `<button>` se utilizan para crear botones, pero tienen características distintas que afectan su uso y apariencia.
 
@@ -252,61 +248,18 @@ Los elementos `<input>` y `<button>` se utilizan para crear botones, pero tienen
 Por tanto, utiliza `<input>` para botones de formulario con funciones específicas y limitadas, mientras que `<button>` es preferible cuando se necesita más personalización o cuando se requiere incluir contenido HTML adicional.
 
 
-
-* Tipo de Elemento: Botón de envío de formulario
-  * Etiqueta a utilizar: 
-  ```
-    <input type="submit">
-  ```
-  * Descripción: Envía los datos del formulario al servidor.
-
-* Tipo de Elemento: Botón de envío con imagen
-  * Etiqueta a utilizar: 
-  ```
-  <input type="image">
-  ```
-  * Descripción: Botón que envía el formulario, pero se muestra como una imagen definida en el atributo src.
-
-* Tipo de Elemento: Botón de reinicio de formulario
-
-  * Etiqueta a utilizar: 
-  ```
-  <input type="reset">
-  ```
-  * Descripción: Restaura todos los campos del formulario a sus valores iniciales.
-
-* Tipo de Elemento: Botón sin funcionalidad
-  * Etiqueta a utilizar: 
-  ```
-  <input type="button">
-  ```
-  * Descripción: No envía ni reinicia el formulario, se utiliza para ejecutar scripts de JavaScript.
-
-* Tipo de Elemento: Botón de envío
-  * Etiqueta a utilizar: 
-  ```
-  <button type="submit">
-  ```
-  * Descripción: Similar al input type="submit", pero permite contenido HTML adicional.
-
-* Tipo de Elemento: Botón de reinicio
-  * Etiqueta a utilizar: 
-  ```
-  <button type="reset">
-  ```
-  * Descripción: Similar al input type="reset", pero permite contenido HTML adicional.
-
-* Tipo de Elemento: Botón sin funcionalidad
-  * Etiqueta a utilizar: 
-  ```
-  <button type="button">
-  ```
-  * Descripción: No envía ni reinicia el formulario, se utiliza para ejecutar scripts de JavaScript y permite contenido HTML adicional.
+| Tipo de Elemento | Etiqueta | Descripción |
+|------------------|----------|------------|
+|Botón de envío de formulario |``<input type="submit">``| Envía los datos del formulario al servidor|
+|Botón de envío con imagen |``<input type="image">``|Botón que envía el formulario, pero se muestra como una imagen definida en el atributo src|
+|Botón de reinicio de formulario|  ``<input type="reset">``| Restaura todos los campos del formulario a sus valores iniciales|
+|Botón sin funcionalidad|  ``<input type="button">``| No envía ni reinicia el formulario, se utiliza para ejecutar scripts de JavaScript|
+|Botón de envío | ``<button type="submit">`` |Similar al input type="submit", pero permite contenido HTML adicional|
+|Botón de reinicio|``<button type="reset">``|Similar al input type="reset", pero permite contenido HTML adicional|
+|Botón sin funcionalidad |``<button type="button">``|No envía ni reinicia el formulario, se utiliza para ejecutar scripts de JavaScript y permite contenido HTML adicional|
 
 
-**Tabla 4.2.** Uso frecuente `<input>` y `<button>`
-
-### 4.2.6. Etiqueta `<select>` 
+### Etiqueta `<select>` 
 
 La etiqueta `<select>` en HTML se utiliza para crear un menú desplegable o una lista de opciones seleccionables. Permite al usuario elegir una opción de entre varias disponibles.
 
@@ -366,12 +319,11 @@ La etiqueta `<optgroup>` se utiliza dentro de un elemento `<select>` para agrupa
 </select>
 ```
 
-
 En este ejemplo, hemos creado una lista desplegable con dos grupos: «Frutas» y «Verduras». Cada grupo está definido por la etiqueta `<optgroup>`, que tiene un atributo `label` que especifica el nombre del grupo. Dentro de cada grupo, hemos incluido etiquetas `<option>` que representan las opciones individuales, como «Manzana», «Naranja», «Zanahoria», etc.
 
 Cuando se renderiza en un navegador, esto creará una lista desplegable con las opciones agrupadas visualmente bajo las etiquetas de grupo. Esto facilita que los usuarios encuentren y seleccionen las opciones que desean de manera más organizada.
 
-### 4.2.7. Etiqueta `<datalist>`
+### Etiqueta `<datalist>`
 
 La etiqueta `<datalist>` se utiliza junto con la etiqueta `<input>` para proporcionar una lista de opciones predefinidas que ayudan a los usuarios a seleccionar un valor mientras escriben en un campo de entrada `<input>`. Esta etiqueta crea una lista desplegable de sugerencias basadas en las opciones que defines, lo que facilita la entrada de datos y mejora la experiencia del usuario.
 
@@ -390,18 +342,17 @@ A continuación se puede ver un ejemplo de cómo se utiliza la etiqueta `<datali
 </datalist>
 ```
 
-
 En este ejemplo, hemos creado un campo de entrada de texto con la etiqueta `<input>` y le hemos asignado un atributo `list` que corresponde al `id` de la etiqueta `<datalist>`. El `<datalist>` contiene opciones (`<option>`) que representan las sugerencias disponibles para el campo de entrada.
 
 Cuando un usuario comienza a escribir en el campo de entrada, verá una lista desplegable con las opciones del `<datalist>`. Puede seleccionar una de las opciones o seguir escribiendo. Esto es especialmente útil para formularios en los que los usuarios deben elegir una opción de una lista predefinida, como una lista de países o productos.
 
 El uso de `<datalist>` mejora la usabilidad y facilita a los usuarios la entrada de datos, especialmente en dispositivos móviles y pantallas táctiles.
 
-### 4.2.8. Etiqueta `<textarea>`
+### Etiqueta `<textarea>`
 
 La etiqueta `<textarea>` en HTML se utiliza para crear un área de entrada de texto de varias líneas. Permite a los usuarios ingresar y editar texto más largo que un solo campo de entrada de texto.
 
-Ejemplo básico de cómo utilizar la etiqueta `<textarea>`:
+_Ejemplo básico de cómo utilizar la etiqueta `<textarea>`_:
 
 ```
 <textarea rows="4" cols="40">
@@ -409,12 +360,11 @@ Esto es un textarea con 4 fulas y 40 columnas.
 </textarea>
 ```
 
-
 En este ejemplo, el atributo **_rows_** define el número de filas visibles del área de texto, mientras que el atributo _**cols**_ establece el número de columnas visibles.
 
 El texto dentro de la etiqueta `<textarea>` se mostrará inicialmente dentro del área de texto y los usuarios podrán editarlo y seleccionarlo.
 
-4.3. Atributos de la etiqueta `<input>`
+Atributos de la etiqueta `<input>`
 ---------------------------------------
 
 La validación de los datos introducidos por los usuarios en los campos de los formularios es esencial para ofrecer al usuario información sobre los datos que se están solicitando. 
@@ -423,33 +373,21 @@ Gracias a los nuevos atributos que se introdujeron en HTML5 no es necesario util
 
 Veamos los atributos más utilizados para los inputs. Algunos de ellos permiten la validación sin necesidad de usar JavaScript.
 
+| Atributos | Descripcion |
+|-----------|-------------|
+| type | Tipo de input: text, password, checkbox, radio, etc|
+| value |Valor inicial del input |
+| readonly |El input es de solo lectura |
+| disabled | El input no se puede modificar |
+| size | Cantidad de caracteres visibles en un input. Su valor por defecto es 20. Funciona en los inputs de los siguientes tipos: text, search, tel, url, email, and password|
+| maxlength | Máximo número de caracteres del input|
+| min / max | Mínimo y máximo número de caracteres del input|
+| pattern |Nos permite indicar un patrón|
+|placeholder |Describe el valor esperado en un campo|
+|required|Especifica que es obligatorio completar el input|
+|autofocus|Indica que se hace foco en ese input cuando se carga la página|
 
 
-* Atributos: type
-  * Descripción: Tipo de input: text, password, checkbox, radio, etc.
-* Atributos: value
-  * Descripción: Valor inicial del input.
-* Atributos: readonly
-  * Descripción: El input es de solo lectura.
-* Atributos: disabled
-  * Descripción: El input no se puede modificar.
-* Atributos: size
-  * Descripción: Cantidad de caracteres visibles en un input. Su valor por defecto es 20. Funciona en los inputs de los siguientes tipos: text, search, tel, url, email, and password.
-* Atributos: maxlength 
-  * Descripción: Máximo número de caracteres del input.
-* Atributos: min / max
-  * Descripción: Mínimo y máximo número de caracteres del input.
-* Atributos: pattern
-  * Descripción: Nos permite indicar un patrón.
-* Atributos: placeholder 
-  * Descripción: Describe el valor esperado en un campo.
-* Atributos: required
-  * Descripción: Especifica que es obligatorio completar el input.
-* Atributos: autofocus 
-  * Descripción: Indica que se hace foco en ese input cuando se carga la página.
-
-
-**Tabla 4.3.** Atributos para los inputs
 
 [Ver más atributos para los inputs](https://developer.mozilla.org/es/docs/Web/HTML/Elemento/form)
 
@@ -492,54 +430,33 @@ En la siguiente tabla se muestran más ejemplos:
 |autofocus  |autofocus=”true” o autofocus                      |
 
 
-**Tabla 4.4.** Ejemplos de atributos para la validación de campos en los formularios
-
-4.4. Tipos de inputs: atributo type
+Tipos de inputs: atributo type
 -----------------------------------
 
 El artributo type de los inputs especifican el tipo de datos que se espera ingresar en el campo. Algunos valores comunes son los siguientes:
 
 
+| Type | Descripcion |
+|------|-------------|
+| checkbox |Casilla de verificación que permite seleccionar o deseleccionar distintos valores|
+| color | Control para especificar un color; abre un selector de colores cuando está activo|
+| date | Permite indicar una fecha (año, mes y día, sin hora). Abre un selector de fechas para año, mes y día |
+| email |Permite insertar un correo electrónico haciendo su validación|
+|file|Permite seleccionar un archivo|
+|image|Botón con imagen de tipo submit. La imagen se define en el atributo src|
+|month|Permite ingresar mes y año|
+|number|Permite ingresar un número. Muestra un selector y agrega validación predeterminada|
+|password|Valor oculto. Usado para contraseñas|
+|radio|Permite seleccionar un valor único entre múltiples opciones|
+|range|Nos deja ingresar un número cuyo valor exacto no es importante. Se muestra como un widget de rango con un valor predeterminado en el medio. Se utiliza en conjunto con «min» y «max» para definir el rango de valores aceptados|
+|search|Campo para ingresar cadenas de búsqueda|
+|submit|Botón que envía el formulario|
+|tel|Control para ingresar un número de teléfono y agrega validación predeterminada|
+|text|Control para campo de texto con validación predeterminada|
+|time|Control para hora|
+|url|Nos permite ingresar una URL|
+|week|Control para ingresar una fecha|
 
-* Type: checkbox
-  * Description: Casilla de verificación que permite seleccionar o deseleccionar distintos valores.
-* Type: color
-  * Description: Control para especificar un color; abre un selector de colores cuando está activo.
-* Type: date
-  * Description: Permite indicar una fecha (año, mes y día, sin hora). Abre un selector de fechas para año, mes y día.
-* Type: email
-  * Description: Permite insertar un correo electrónico haciendo su validación.
-* Type: file
-  * Description: Permite seleccionar un archivo.
-* Type: image
-  * Description: Botón con imagen de tipo submit. La imagen se define en el atributo src.
-* Type: month
-  * Description: Permite ingresar mes y año.
-* Type: number
-  * Description: Permite ingresar un número. Muestra un selector y agrega validación predeterminada.
-* Type: password
-  * Description: Valor oculto. Usado para contraseñas.
-* Type: radio
-  * Description: Permite seleccionar un valor único entre múltiples opciones.
-* Type: range
-  * Description: Nos deja ingresar un número cuyo valor exacto no es importante. Se muestra como un widget de rango con un valor predeterminado en el medio. Se utiliza en conjunto con «min» y «max» para definir el rango de valores aceptados.
-* Type: search
-  * Description: Campo para ingresar cadenas de búsqueda. 
-* Type: submit
-  * Description: Botón que envía el formulario
-* Type: tel
-  * Description: Control para ingresar un número de teléfono y agrega validación predeterminada.
-* Type: text
-  * Description: Control para campo de texto con validación predeterminada.
-* Type: time
-  * Description: Control para hora.
-* Type: url
-  * Description: Nos permite ingresar una URL.
-* Type: week
-  * Description: Control para ingresar una fecha.
-
-
-**Tabla 4.5**. Tipos de inputs
 
 ```
  <form>
@@ -581,7 +498,7 @@ El artributo type de los inputs especifican el tipo de datos que se espera ingre
  </form>
 ```
 
-4.5. Atributo _pattern_ y expresiones regulares
+Atributo _pattern_ y expresiones regulares
 -----------------------------------------------
 
 El atributo _pattern_ nos permite definir nuestras propias reglas para validar el valor de entrada de los campos usando expresiones regulares o _regexp_ (contracción de las palabras inglesas _regular expression_).
@@ -589,27 +506,27 @@ El atributo _pattern_ nos permite definir nuestras propias reglas para validar e
 Veamos un resumen de algunos de los caracteres que nos ayudan a construir expresiones regulares:
 
 
-|Clases de caracteres  |                                                       |
-|----------------------|-------------------------------------------------------|
+|Clases de caracteres | Descripcion |
+|---------------------|-------------|
 |.                     |Cualquier carácter excepto salto de línea              |
 |[abc]                 |Cualquiera de los caracteres entre corchetes           |
 |[^abc]                |Que NO sea cualquiera de los caracteres entre corchetes|
 |[a-g]                 |Cualquier carácter entre a y g (en minúscula)          |
-|(a|b)                 |a o b                                                  |
-|Anclas                |                                                       |
+|(a\|b)               |a o b |
 |^abc                  |Comienzo de una línea                                  |
 |abc$                  |Final de una línea                                     |
-|Caracteres específicos|                                                       |
+
+|Caracteres específicos | Descripcion | 
+|-----------------------|-------------|
 |\w\ d \s              |Palabra, dígito, espacio en blanco                     |
 |\W \D \S              |Que NO sea palabra, dígito o espacio en blanco         |
-|\t \n \r              |Tabulador, salto de línea, retorno de carro            |
-|Cuantificadores       |                                                       |
+|\t \n \r              |Tabulador, salto de línea, retorno de carro|
+
+|Cuantificadores| Descripcion |
+|---------------|-------------|  
 |a* a+ a?              |0 o más veces, 1 o más veces, 0 o 1 vez                |
 |a{5} a{2,}            |Solo 5, 2 o más                                        |
 |a{1,3}                |Entre 1 y 3                                            |
-
-
-**Tabla 4.6**. Patrones y expresiones regulares _regexp_
 
 En la siguiente página web puedes ver una referencia de patrones y expresiones regulares. Además, permite la validación de expresiones regulares: [regexr.com](https://regexr.com/)
 
@@ -650,8 +567,8 @@ Expresiones regulares comúnmente utilizadas en atributos HTML:
 <input type="text" pattern="[A-Za-z0-9]+">
 ```
 
----
-**Ejemplo**
+
+## Ejemplo
 
 En el siguiente ejemplo se muestra un formulario que solicita los siguientes datos:
 
