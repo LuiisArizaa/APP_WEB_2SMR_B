@@ -24,12 +24,12 @@ En HTML la estructura interna básica de una página web se ha simplificado, red
 
 ### Partes de una página web
 
-Cada fichero HTML está compuesto de dos partes: el [<head>](#punto2) y el [<body>](#punto_body)
+Cada fichero HTML está compuesto de dos partes: el [``<head>``](#punto2) y el [``<body>``](#punto_body)
 
 ¿Qué es y qué contiene el \<head>?
 ---------------------------------
 
-El \<head> es una parte de la web donde colocamos todas aquellas etiquetas (que no se van a visualizar), pero que sirven para indicar todas las características que el navegador necesita, como por ejemplo:
+El ``<head>`` es una parte de la web donde colocamos todas aquellas etiquetas (que no se van a visualizar), pero que sirven para indicar todas las características que el navegador necesita, como por ejemplo:
 
 La etiqueta charset es una de las impriscindibles, ya que indica la codificación que tendrá la página. Con un valor de utf-8 se mostrarán símbolos como la "ñ", "ç" o los acentos correctamente.
 
@@ -39,7 +39,7 @@ La etiqueta charset es una de las impriscindibles, ya que indica la codificació
 ```
 
 
-El texto indicado dentro de la etiqueta \<title> se mostrará en la pestaña del navegador. Además ser el que se muestre en las búsquedas de los diferentes buscadores y es un elemento importante (a nivel de SEO) para el posicionamiento de la página.
+El texto indicado dentro de la etiqueta ``<title>`` se mostrará en la pestaña del navegador. Además ser el que se muestre en las búsquedas de los diferentes buscadores y es un elemento importante (a nivel de SEO) para el posicionamiento de la página.
 
 ```
 <meta name="description" content="Descripción de la página"/>
@@ -59,7 +59,7 @@ La longitud idónea no debe ser superior a 156 carácteres, para que el buscador
 ```
 
 
-Dentro de estas etiquetas style ubicaremos el código CSS que **única** y **exclusivamente** afectará a los elementos de este mismo fichero HTML (tratado en el tema: [Introducción a CSS](https://www.html6.es/t7_intro_css.html#punto3)).
+Dentro de estas etiquetas style ubicaremos el código CSS que **única** y **exclusivamente** afectará a los elementos de este mismo fichero HTML.
 
 ```
 <link rel=stylesheet href="css/estilo.css" type="text/css"/>
@@ -69,7 +69,7 @@ Dentro de estas etiquetas style ubicaremos el código CSS que **única** y **exc
 
 En el atributo href=" " indicaremos la ruta donde está ubicado al fichero CSS externo (código que afectará a todos los elementos de todas las páginas HTML donde se coloque esta etiqueta).
 
-En el caso de que una página tenga estas dos últimas etiquetas se ejecutarán las dos. Si tienen las mismas propiedades, tendrá más valor la que se indique en último lugar (tratado en el tema: [Introducción a CSS](https://www.html6.es/t7_intro_css.html#punto3)).
+En el caso de que una página tenga estas dos últimas etiquetas se ejecutarán las dos. Si tienen las mismas propiedades, tendrá más valor la que se indique en último lugar.
 
 ```
 <script type="text/javascript">
@@ -89,76 +89,73 @@ Dentro de esta etiqueta script escribiremos el código de javaScript (en el caso
 
 El valor viewport únicamente será leído por móviles, tablets y dispositivos conectados a internet en general, en los que el tamaño de su navegador esté supeditado al tamaño de la pantalla del dispositivo (osea todos).
 
-En este ejemplo (que está ampliado en el tema: [Responsive design](https://www.html6.es/t20_mediaqueries.html)) se indica que el ancho del contenido se adaptará al ancho de la pantalla del dispositivo y que el zoom (tamaño) inicial del contenido será del 100% (para que el contenido no tenga que ampliarse por el usuario nada más acceder a la web y sea legible sin esfuerzo).
+En este ejemplo se indica que el ancho del contenido se adaptará al ancho de la pantalla del dispositivo y que el zoom (tamaño) inicial del contenido será del 100% (para que el contenido no tenga que ampliarse por el usuario nada más acceder a la web y sea legible sin esfuerzo).
 
 Las etiquetas semánticas de HTML5
 ---------------------------------
 
-El \<body> es donde se colocan todos los elementos que sí se van a mostrar y que forman el contenido de la página. Habitualmente todo este contenido deberá estar dentro de cajas.
+El ``<body>`` es donde se colocan todos los elementos que sí se van a mostrar y que forman el contenido de la página. Habitualmente todo este contenido deberá estar dentro de cajas.
 
 ![](https://www.html6.es/img_html/cajas.png)
 
-Con la versión anterior de HTML sólo existía un tipo de caja \<div>, por lo que una caja podía contener cualquier tipo de contenido.
+Con la versión anterior de HTML sólo existía un tipo de caja ``<div>``, por lo que una caja podía contener cualquier tipo de contenido.
 
-Una de las novedades de HTML5, aparte de disponer de esta misma caja genérica \<div>, tenemos diferentes tipos de cajas destinadas cada una a un tipo de contenido concreto \<main>, \<header>, \<nav>, \<section>, \<article>, \<aside> y \<footer>. De esta manera el navegador puede entender qué contiene cada una de estas cajas, sin necesidad de tener que entender el idioma utilizado y sin tener que leer ni analizar el texto que contiene.
+Una de las novedades de HTML5, aparte de disponer de esta misma caja genérica ``<div>``, tenemos diferentes tipos de cajas destinadas cada una a un tipo de contenido concreto ``<main>``, ``<header>``, ``<nav>``, ``<section>``, ``<article>``, ``<aside>`` y ``<footer>``. De esta manera el navegador puede entender qué contiene cada una de estas cajas, sin necesidad de tener que entender el idioma utilizado y sin tener que leer ni analizar el texto que contiene.
 
-div (caja genérica)
------------------
+## div (caja genérica)
 
-\<div> es el tipo de caja genérica, que aunque no identifica qué tipo de contenido contiene, sigue siendo la más utilizada. No obstante suele estar ubicada dentro de cajas que sí tienen un significado semántico concreto como las que siguen...
-
+``<div>`` es el tipo de caja genérica, que aunque no identifica qué tipo de contenido contiene, sigue siendo la más utilizada. No obstante suele estar ubicada dentro de cajas que sí tienen un significado semántico concreto como las que siguen...
 
 
-main (contenido principal de la página)
-----
 
-\<main> es la caja que contiene todo el contenido principal de la página, con las siguientes características:
+## main (contenido principal de la página)
 
-*   Sólo puede existir un único \<main> por página.
+``<main>`` es la caja que contiene todo el contenido principal de la página, con las siguientes características:
+
+*   Sólo puede existir un único ``<main>`` por página.
 *   No puede estar dentro de ninguna otra caja.
-*   Dentro contendrá aquel contenido que no se repita en cada página (conteniendo \<div>, \<section>, \<article> o incluso \<aside>), pero nunca cajas como \<header>, \<nav> o \<footer>).
+*   Dentro contendrá aquel contenido que no se repita en cada página (conteniendo ``<div>``, ``<section>``, ``<article>`` o incluso ``<aside>``), pero nunca cajas como ``<header>``, ``<nav>`` o ``<footer>``).
 
 
-header (encabezado)
--------------------
-
-Dentro de la caja \<header> ubicamos el contenido que estaría destinado al encabezado de la página. Normalmente contiene el logo y el nombre de la página y suele estar ubicado al inicio.
+## header (encabezado)
 
 
-footer (pie de página)
-----------------------
+Dentro de la caja ``<header>`` ubicamos el contenido que estaría destinado al encabezado de la página. Normalmente contiene el logo y el nombre de la página y suele estar ubicado al inicio.
 
-La caja \<footer> contiene la información que figura al pie de la página (normalmente es la última caja de todas) y es donde se ubica el ©, e información como el mapa de la página, autor, fecha y otros datos finales.
 
-Actualmente existe la tendencia de hacer \<footer> enormes donde figura todo lo que se puede encontrar en el sitio.
+## footer (pie de página)
 
-La caja \<nav> contiene todos los enlaces de la página, ya sea a otras secciones de nuestro mismo sitio web o a páginas externas. Por ello, en algunos casos pueden existir varios \<nav>, como por ejemplo el del principio de la página y otro final ubicado dentro del \<footer>
+La caja ``<footer>`` contiene la información que figura al pie de la página (normalmente es la última caja de todas) y es donde se ubica el ©, e información como el mapa de la página, autor, fecha y otros datos finales.
+
+Actualmente existe la tendencia de hacer ``<footer>`` enormes donde figura todo lo que se puede encontrar en el sitio.
+
+La caja ``<nav>`` contiene todos los enlaces de la página, ya sea a otras secciones de nuestro mismo sitio web o a páginas externas. Por ello, en algunos casos pueden existir varios ``<nav>``, como por ejemplo el del principio de la página y otro final ubicado dentro del ``<footer>``.
 
 section (sección de información)
 --------------------------------
 
-Las cajas \<section> contienen el contenido genérico de la página.
+Las cajas ``<section>`` contienen el contenido genérico de la página.
 
-*   Se pueden utilizar varios \<section> al mismo tiempo en la misma página.
-*   Pueden contener múltiples \<div> y otras cajas relacionadas, como \<article>.
+*   Se pueden utilizar varios ``<section>`` al mismo tiempo en la misma página.
+*   Pueden contener múltiples ``<div>`` y otras cajas relacionadas, como ``<article>``.
 *   Normalmente se utilizan para grandes cantidades o secciones de información de tipo similar.
 
 article (artículo)
 ------------------
 
-Las cajas \<article> también están destinadas a contener el contenido de la página, aunque normalmente suelen utilizarse para mostrar información más reducida y concreta y que puede ser independiente del resto.
+Las cajas ``<article>`` también están destinadas a contener el contenido de la página, aunque normalmente suelen utilizarse para mostrar información más reducida y concreta y que puede ser independiente del resto.
 
 
 aside (contenido)
 -----------------
 
-Dentro de las cajas de tipo \<aside> se ubican los contenidos que no tienen relación directa con el contenido, como por ejemplo información sobre vacunas o pasaportes en una web de viajes, calendario de eventos de una entidad, publicidad o la biografía del autor de un blog.
+Dentro de las cajas de tipo ``<aside>`` se ubican los contenidos que no tienen relación directa con el contenido, como por ejemplo información sobre vacunas o pasaportes en una web de viajes, calendario de eventos de una entidad, publicidad o la biografía del autor de un blog.
 
 
 figure (imagen)
 ---------------
 
-Aunque \<figure> no tiene las mismas funcionalidades ni características que el resto de cajas, tiene como objetivo contener imágenes que opcionalmente pueden tener vinculadas un pie de imágen (información más detallada en el tema [figure y figcaption](https://www.html6.es/t1_4_imagenes.html#punto3)).
+Aunque ``<figure>`` no tiene las mismas funcionalidades ni características que el resto de cajas, tiene como objetivo contener imágenes que opcionalmente pueden tener vinculadas un pie de imágen.
 
 Ejemplo de una estructura HTML5 más compleja
 --------------------------------------------

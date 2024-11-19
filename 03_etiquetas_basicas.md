@@ -1,6 +1,5 @@
 
-Etiquetas básicas
------------------
+# Etiquetas básicas
 
 Al escribir código HTML existen algunas características, como pueden ser los saltos de línea, las negritas, múltiples espacios seguidos, cursivas o sangrías que tienen que indicarse expresamente utilizando diferentes etiquetas HTML.
 
