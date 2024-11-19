@@ -1,7 +1,5 @@
-1\. Ejercicio resuelto HTML: Crea una página con las siguientes etiquetas
+1\. Crea una página con las siguientes etiquetas
 -------------------------------------------------------------------------
-
-_Para este ejercicio necesitas estudiar las tres primeras secciones del tutorial HTML._
 
 Crea una página web HTML que cumpla con las siguientes especificaciones:
 
