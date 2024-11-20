@@ -82,8 +82,10 @@ Los comentarios se escriben entre los caracteres que se muestran en el siguiente
 Crear un archivo HTML es el primer paso para desarrollar una página web básica. Para hacerlo, no es necesario un software especializado, aunque es altamente recomendable utilizar un editor de código para facilitar el proceso de escritura y evitar errores. Nosotros utilizaremos **Visual Studio Code**.
 
 Para trabajar de manera más cómoda vamos a instalar las siguientes extensiones en **Visual Studio Code**:
-    * [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer). Live server en Visual Studio Code es una herramienta que nos permite lanzar un servidor de desarrollo local para previsualizar en el navegador lo que estamos escribiendo en nuestro editor de código.
-    * [**Emmet**](https://docs.emmet.io/cheat-sheet/). Las abreviaciones Emmet son una herramienta para aumentar la productividad y eficiencia en el desarrollo web. Emmet, anteriormente conocido como Zen Coding, nos permite escribir menos y lograr más al expandir abreviaciones en código HTML y CSS completos.
+
+* [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer). Live server en Visual Studio Code es una herramienta que nos permite lanzar un servidor de desarrollo local para previsualizar en el navegador lo que estamos escribiendo en nuestro editor de código.
+
+* [**Emmet**](https://docs.emmet.io/cheat-sheet/). Las abreviaciones Emmet son una herramienta para aumentar la productividad y eficiencia en el desarrollo web. Emmet, anteriormente conocido como Zen Coding, nos permite escribir menos y lograr más al expandir abreviaciones en código HTML y CSS completos.
 
 Vamos ahora a crear un archivo con extensión html (.html) en el editor de texto. Vamos a hacer click con el botón derecho y marcar la opcion **_Open with Live Server_**. Se abrirá una pestaña nueva en nuestro navegador con el dominio _http://127.0.0.1:5500/nombre-del-archivo.html_
 
