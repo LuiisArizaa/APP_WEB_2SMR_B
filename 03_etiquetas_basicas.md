@@ -25,8 +25,7 @@ Título: Fenomenología del espíritu Subtítulo: Contenido de la obra La Idea e
 
 Para poder visualizarlo añadiendo negritas, saltos de página, párrafos y sangrías tendríamos que utilizar varias etiquetas:
 
-Saltos de línea ``<br>``
------------------------
+### Saltos de línea ``<br>``
 
 Cuando queremos añadir un ENTER o salto de línea para que el texto baje a la siguiente línea utilizamos la etiqueta ``<br>``. Así, en el caso del ejemplo anterior tendríamos que haber añadido un ``<br>`` para partir la línea del subtítulo:
 
@@ -39,8 +38,6 @@ Subtítulo: Contenido de la obra <br>
 	del espíritu.	
 
 ```
-
-
 Los párrafos se indican con la etiqueta ``<p>``.
 
 Si únicamente añadimos una etiqueta ``<p>`` se aplica un salto de línea algo más grande que el ``<br>`` anterior. Pero si por el contario encerramos un párrafo entre las etiquetas ``<p>`` al principio y ``</p>`` al final del párrafo, éste se separará del bloque anterior y siguiente con un espacio doble (como es el caso de este párrafo).
@@ -56,10 +53,7 @@ Subtítulo: Contenido de la obra <br>
 	del espíritu.	
 
 ```
-
-
-Sangrías  ``<dd>...</dd>``
-------------------------
+### Sangrías  ``<dd>...</dd>``
 
 Las sangrías son aquellos espacios en blanco (vacios) que se colocan al comienzo de una línea o párrafo. Así, para crear sangrías tenemos diferentes etiquetas, aunque posiblemente la que da mejores resultados y es más fácil y fiable son las etiquetas ``<dd>`` y ``</dd>``
 
@@ -72,10 +66,7 @@ Subtítulo: Contenido de la obra <br>
 	del espíritu.</dd>	
 
 ```
-
-
-**Negritas** y _cursivas_
--------------------------
+### **Negritas** y _cursivas_
 
      ``<b>...\</b>``   ,   ``<i>...\</i>``
 
@@ -104,13 +95,11 @@ Si además, queremos colocar "_Fenomenología del espíritu_" en _cursiva_ debem
 
 ```
 
-
-Encabezados  ``<h1>``, ``<h2>``, ``<h3>``, ``<h4>``, ``<h5>``, ``<h6>``
---------------------------------------------------------
+### Encabezados  ``<h1>``, ``<h2>``, ``<h3>``, ``<h4>``, ``<h5>``, ``<h6>``
 
 Los encabezados (``<h1>``, ``<h2>``, ``<h3>``, ``<h4>``, ``<h5>`` y ``<h6>``) tienen una gran importancia a nivel de SEO, ya que ayudan a posicionar nuestra web. El objetivo es indicar a los buscadores la estructura que tiene cada una de nuestras páginas, de qué va, qué apartados y subapartados tienen y su relación de importancia.
 
-### ``<h1> ...</h1>`` (Títulos)
+#### ``<h1> ...</h1>`` (Títulos)
 Con ``<h1>`` especificamos el título de la página (no del sitio en general) y por lo tanto:
 
 *   Contra más concreto y conciso mejor.
@@ -119,7 +108,7 @@ Con ``<h1>`` especificamos el título de la página (no del sitio en general) y 
 *   Que cada página tengo un ``<h1>`` diferente.
 *   Es conveniente colocarlo en la parte superior de la página (antes que los ``<h2>``).
 
-### ``<h2> ...</h2>`` (Subapartados)
+#### ``<h2> ...</h2>`` (Subapartados)
 
 Utilizamos ``<h2>`` para especificar los subtítulos o diferentes partes de cada página. Por ello:
 
@@ -127,7 +116,7 @@ Utilizamos ``<h2>`` para especificar los subtítulos o diferentes partes de cada
 *   Habitualmente existirán varios ``<h2>`` por página.
 *   Se colocan al inicio de cada uno de los subapartados.
 
-### ``<h3> ...</h3>`` (Partes de los subapartados)
+#### ``<h3> ...</h3>`` (Partes de los subapartados)
 
 La etiqueta ``<h3>`` sirve para especificar las diferentes partes de cada uno de los subapartados.
 
