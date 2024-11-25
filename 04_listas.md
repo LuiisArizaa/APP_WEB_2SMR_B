@@ -136,86 +136,56 @@ Lista (ordenada) que se inicia en la segunda letra minúscula de los últimos Re
 3.  Theudiselo (548-549)
 4.  Teodorico II (453-466)
 
-Listas con imágenes en vez de viñetas
--------------------------------------
+## Atributos de las listas en HTML
 
-Tenemos la posibilidad de sustituir las viñetas predeterminadas (círculos o cuadros) por imágenes (gif o png) añadiendo un poco de código CSS.
+Los atributos de las listas en HTML te permiten personalizar tanto las listas ordenadas como las listas no ordenadas. A continuación se muestra una descripción de algunos de los atributos más comunes para ambos tipos de listas:
 
-Vamos a añadir un icono de una flecha en formato PNG (![](https://www.html6.es/img_html/flecha_derecha.png)) -que tenemos en la carpeta img\- delante de cada elemento de la siguiente lista:
+Los **atributos type y start** **no son soportados en algunas versiones de HTML** (por ejemplo en HTML 4.01 strict). En cualquier caso, lo **recomendable es hacer uso de hojas de estilo CSS**, usando propiedades como `list-style-type` u otras, como veremos en la unidad de CSS.
+
+Atributo «**type**» (para listas ordenadas):
+
+*   «1»: Numeración decimal (1, 2, 3, …).
+*   «A»: Letras mayúsculas (A, B, C, …).
+*   «a»: Letras minúsculas (a, b, c, …).
+*   «I»: Números romanos mayúsculos (I, II, III, …).
+*   «i»: Números romanos minúsculos (i, ii, iii, …).
+
+Atributo «**type**» (para listas no ordenadas):
+
+*   «disc»: Puntos sólidos (●, ●, ●, …).
+*   «circle»: Círculos (○, ○, ○, …).
+*   «square»: Cuadrados (■, ■, ■, …).
+
+Atributo «**start**» (solo para listas ordenadas): Establece el valor inicial de la numeración de la lista.
+
+Atributo «**reversed**» (solo para listas ordenadas): Invierte el orden de numeración de la lista.
+
+A continuación se muestra un ejemplo del uso de estos atributos:
 
 ```
-<ul class="lista1">
-   <li> Ataúlfo (410-415) </li>
-   <li> Sigérico (415) </li>
-   <li> Walia (415-418) </li>
-   <li> Teodorico I (418-451) </li>
+<h3>Lista ordenada 1:</h3>
+<ol type="A" start="3">
+  <li>Elemento 1</li>
+  <li>Elemento 2</li>
+  <li>Elemento 3</li>
+</ol>
+
+<h3>Lista ordenada 2:</h3>
+<ol type="1" reversed>
+  <li>Elemento 1</li>
+  <li>Elemento 2</li>
+  <li>Elemento 3</li>
+</ol>
+
+<h3>Lista no ordenada 3:</h3>
+<ul type="square">
+  <li>Elemento 1</li>
+  <li>Elemento 2</li>
+  <li>Elemento 3</li>
 </ul>
-
 ```
 
 
-Código CSS:
-
-```
-.lista1{
-   list-style:none; 
-   list-style-image:url('img/flecha.gif');
-}
-
-```
+En este ejemplo, la lista ordenada 1 comenzará en la letra «C» y la lista ordenada 2 invertirá el orden numérico de los elementos. La lista no ordenada utilizará cuadrados como viñetas. Ver ejemplo en CodePen:
 
 
-Así, con **list-style: none;** eliminamos las viñetas, mientras que con list-style-image especificamos qué imagen se debe utilizar.
-
-![](https://www.html6.es/img_html/flecha_derecha.png) Ataúlfo (410-415)
-
-![](https://www.html6.es/img_html/flecha_derecha.png) Sigérico (415)
-
-![](https://www.html6.es/img_html/flecha_derecha.png) Walia (415-418)
-
-![](https://www.html6.es/img_html/flecha_derecha.png) Teodorico I (418-451)
-
-Viñetas de colores
-------------------
-
-Mis Reyes Godos preferidos:
-
-*   Ataúlfo (410-415)
-*   Sigérico (415)
-*   Walia (415-418)
-*   Teodorico I (418-451)
-
-Normalmente el texto y la viñeta (círculo o cuadrado) de cada elemento de la lista comparten el mismo color, tipo y tamaño de la fuente, por lo que si queremos independizar a estos dos elementos para darles a cada uno de ellos por separado un estilo diferente, vamos a tener que encerrar al texto dentro de una etiqueta \<span>, para que de esta manera podamos hacer referencia a este tipo de etiqueta en el código CSS sin influir en las características de la viñeta.
-
-Vamos a hacer un ejemplo con una versión resumida de una lista de mis Reyes Godos preferidos.
-
-```
-<ul>
-   <li> <span>Ataúlfo (410-415)</span> </li>
-   <li> <span>Sigérico (415)</span> </li>
-   <li> <span>Walia (415-418)</span> </li>
-   <li> <span>Teodorico I (418-451)</span> </li>
-</ul>
-
-```
-
-
-```
-<style type="text/css">
-    ul li{
-       color:red;
-       font-weight:bold;
-       font-size:8px;
-    }
-    ul li span{
-       color:black;
-       font-size:15px;
-    }   
-</style>
-
-```
-
-
-Con 'ul li' estamos haciendo referencia a cada uno de los elementos \<li> de la lista \<ul>, osea a las viñetas (bolitas o cuadrados).
-
-Con 'ul li span' agrupamos a todas las etiquetas de tipo \<span>, que se encuentren dentro de las etiquetas de tipo \<li> y que a su vez éstas estén dentro de etiquetas \<ul>. En este caso se refiere a los textos de las viñetas, a los que se les aplica un color negro y un tamaño de 15 píxeles.

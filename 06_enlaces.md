@@ -1,6 +1,6 @@
 # Enlaces
-Enlaces (de texto)
-------------------
+
+## Enlaces (de texto)
 
 Podemos encontrar 6 tipos de enlaces:
 
@@ -22,7 +22,7 @@ fichero\_a\_abrir.html indica el fichero, dirección de correo electrónico o pa
 
 * **Enlace** sería el texto (o la imagen) sobre la que el usuario tendría que hacer clic para acceder al destino indicado.
 
-### Enlazar con páginas HTML propias hechas por nosotros
+###  Enlazar con páginas HTML propias hechas por nosotros
 
 Como normalmente ubicaremos los distintos ficheros HTML en la misma carpeta, para enlazar un HTML con otro, únicamente hay que especificar el archivo HTML al que se desea enlazar (sin olvidar de indicar el formato .html).
 
@@ -32,7 +32,6 @@ En el siguiente ejemplo se crea un enlace de texto, que será "Galería de Imág
 <a href="galeria.html">Galería de Imágenes</a>
 
 ```
-
 
 ### Enlaces a una parte interna de nuestro HTML
 
@@ -57,7 +56,6 @@ Enlace al mismo punto, pero desde fuera del mismo documento (desde otro document
 
 ```
 
-
 ### Enlazar con páginas HTML de terceros:
 
 Para enlazar con páginas web externas realizadas por otras personas, tendremos que añadir el atributo target="\_blank", para que dicha página no se abra en la misma ventana del navegador (cerrando por lo tanto nuestra web) y que ésta se abra en una nueva pestaña del navegador.
@@ -68,7 +66,6 @@ Otro de los puntos importantes es que la dirección de la web de destino tiene q
 <a href="https://www.html6.es/t1_estructura.html" target="_blank">Galería de Imágenes</a>
 
 ```
-
 
 ### Enlazar con un correo electrónico
 
@@ -93,7 +90,6 @@ Si dicho archivo está en la misma carpeta que el archivo HTML, se especificará
 
 ```
 
-
 ### Enlazar con ficheros comprimidos para descargar
 
 Para permitir que los usuarios se puedan descargar los ficheros que creamos convenientes, es suficiente con comprimir todos los ficheros en un archivo comprimido (zip o rar), colgarlo en nuestro servidor y enlazar directamente con dicho fichero.
@@ -103,100 +99,65 @@ Para permitir que los usuarios se puedan descargar los ficheros que creamos conv
 
 ```
 
-
 Con este cógido el navegador descargará el archivo especificado y lo guardará en la carpeta de descargas.
 
-Imágenes como enlace
---------------------
+## Valores del atributo href
 
-Para que el enlace sea una imagen (y no un texto) es suficiente con sustituir el texto del enlace por la etiqueta \<img> (utilizada para mostrar imágenes y explicada en el tema [Imágenes](https://www.html6.es/t1_4_imagenes.html)).
+Como hemos visto, el elemento <a> o hiperenlace crea un enlace a otra página o archivo. Además, también puede enlazar a una sección de la misma página, a un correo electrónico o a un teléfono, entre otras opciones.
 
+**Valores del atributo href:** vamos a ver cómo crear un enlace para llamar a un número de teléfono con **tel** y para enviar un correo con **mailto**.
+
+
+### Ejemplo
 ```
-<a href="galeria.html">
-    <img src="carpeta/imagen.png">
-</a>
-
-```
-
-
-CSS exclusivo para enlaces
---------------------------
-
-Si -por ejemplo- queremos tener el siguiente enlace de color **naranja**:
-
-```
-<nav id="enlaces">
-   <a href="galeria.html">Ir a Galería</a>
-</nav>
+<!-- Enviar un correo con mailto-->
+<a href="mailto:info@eniun.com">Enviar correo a Eniun</a><br>
+<!-- Llamar por teléfono con tel-->
+<a href="tel:+34666666666">Llamar por teléfono a 666 666 666</a>
 
 ```
 
+## Valores del atributo target
 
-El siguiente código CSS sería totalmente **erróneo**:
+El atributo «target» en HTML se utiliza para especificar dónde se debe abrir el enlace cuando un usuario hace clic en él. A continuación se presentan algunos de los valores más comunes utilizados para el atributo «target»:
+
+|Valor|Descripción|
+|-----|-----------|
+|«_blank»|Abre el enlace en una nueva ventana o pestaña del navegador|
+|«_self»|Abre el enlace en la misma ventana o pestaña del navegador (valor predeterminado)|
+|«_parent»|Abre el enlace en el marco principal o padre en caso de que se esté utilizando frames|
+|«_top»|Abre el enlace en la ventana principal del navegador, reemplazando cualquier frame existente|
+
+### Ejemplo
+
+En el siguiente ejemplo vamos a abrir un enlace en una página distinta mediante el atributo target y el valor \_blank.
 
 ```
-#enlaces{
-   color:orange;
-}
-
-```
-
-
-Ya que el selector #enlaces cambiaría a color naranja todos los **textos** que hubiesen dentro de la caja \<nav> llamada "enlaces", pero como el enlace "Ir a Galería" no es un texto, sino que es un enlace, lo que tenemos que utilizar es el selector a, en vez de indicar el nombre de su caja:
-
-```
-#enlaces a{
-   color:orange;
-}
+<!-- Abrir enlace en una página aparte -->
+<a href="https://www.eniun.com" target="_blank">Enlace 1</a>
+ 
+<!-- Abrir enlace en la misma página -->
+<a href="https://www.eniun.com" target="_self">Enlace 2</a>
 
 ```
 
 
-O, si queremos que este color se aplique a **todos los enlaces** de la página podemos generalizar, sin indicar la caja donde se encuentra el enlace:
+### Atributo download
 
-Si además queremos que el enlace NO esté subrayado utilizaremos la propiedad text-decoration, con un valor none, que también se tiene que aplicar al enlace (a) y no a la caja donde esté el enlace:
-
-```
-a{
-   text-decoration:none;
-   color:orange;
-}
+El atributo «**download**» en HTML se utiliza para especificar que un enlace debe ser descargado al hacer clic en él en lugar de navegar hacia él. Permite proporcionar un nombre de archivo sugerido para el archivo descargado. Así es como funciona el atributo «download»:
 
 ```
-
-
-Para que al pasar por encima del enlace éste se coloree de color rojo, utilizaremos la pseudo-clase (o evento) **:hover**;
-
-Por último, si queremos que:
-
-1.  Un enlace no funcione como enlace en un HTML en concreto (ya que ya estamos en esa misma página) y por lo tanto al pulsar sobre el enlace se recargaría la misma página en la que ya estamos.
-2.  Que dicho enlace en concreto tenga un aspecto diferente al resto de enlaces para informar al usuario del apartado en el que encuentra en este momento.
-3.  Que cuando el usuario pase con el cursor por encima, el aspecto del cursor no cambie y continue siendo el de la flecha blanca.
-
-Tendremos que utilizar dos selectores CSS, uno para el aspecto de inicio y el otro para indicar las características para cuando el cursor pase por encima.
-
-```
-<nav>
-    <div id="enlace1" class="enlaces">
-       <a>Ir a Galería</a>
-    </div>
-</nav>
-
+<a href="ruta/al/archivo.pdf" download="miarchivo.pdf">Descargar PDF</a>
 ```
 
+En este ejemplo, cuando el usuario hace clic en el enlace «Descargar PDF», en lugar de abrirse en el navegador, se descargará el archivo especificado en el atributo «href» (`ruta/al/archivo.pdf`). El atributo «download» especifica el nombre de archivo sugerido para el archivo descargado (`miarchivo.pdf`).
 
-Eliminando el atributo href de la etiqueta \<a>, el enlace no funciona como enlace (no enlaza con nada al hacer clic), pero sigue cambiando de color al colocar el cursor encima. El problema es que el cursor que aparece al colocar el mouse encima es muy poco apropiado (el de selección de texto: (coloca el cursor encima del siguiente enlace para ver el cursor de 'selección de texto'): Ir a Galería).
 
-Así, para especificar el color de inicio del enlace utilizamos el selector **#enlace1 a**, mientras que dentro de **#enlace1 a:hover** especificamos el cursor (el habitual) que aparecerá al colocar el mouse encima.
 
-```
-#enlace1 a{
-    color:chocolate;
-    font-size:20px;	
-}
 
-#enlace1 a:hover{
-    cursor:default;
-}
 
-```
+
+
+
+
+
