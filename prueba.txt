@@ -1,1 +1,2 @@
+Esto es una prueba para ver el uso de merge.
 Esta prueba es en local.
