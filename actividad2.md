@@ -22,3 +22,5 @@ Agrega un título o encabezado a tu página utilizando la etiqueta `<h1>`. Elige
 Incluye las etiquetas para la metainformación, como `<meta name="description" content="Descripción de la página">` y `<meta name="author" content="Tu Nombre">`.
 
 Puedes agregar cualquier otro contenido o texto que desees en tu página para darle contexto.
+
+Utiliza marcadora para moverte de un lado a otro de la página. 
