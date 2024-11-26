@@ -141,7 +141,7 @@ Dentro de las cajas de tipo ``<aside>`` se ubican los contenidos que no tienen r
 Aunque ``<figure>`` no tiene las mismas funcionalidades ni características que el resto de cajas, tiene como objetivo contener imágenes que opcionalmente pueden tener vinculadas un pie de imágen.
 
 
-![](./assets/estructura_etiquetas_semanticas.JPG)
+![](../assets/estructura_etiquetas_semanticas.JPG)
 
 
 ## Ejemplo de una estructura HTML5 más compleja
