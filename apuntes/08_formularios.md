@@ -41,6 +41,25 @@ El atributo _method_ puede ser «_GET_» o «_POST_» y determina el método HTT
 
 *   _**POST**_: Los datos del formulario se envían en el cuerpo de la solicitud HTTP de manera más segura y no se muestran en la URL. Es adecuado para enviar datos sensibles, como contraseñas o información personal.
 
+**OJO**: En los elementos de un formulario (`<input>, <textarea>, <select>`, etc.), el atributo **_name_** es crucial para enviar los datos al servidor. Cuando el formulario es enviado, los valores de los elementos con atributo **_name_** se incluyen en el cuerpo de la solicitud como pares clave-valor.
+
+Veamos un ejemplo:
+
+```
+<form action="/submit" method="POST">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre_usuario">
+    <input type="submit" value="Enviar">
+</form>
+
+ ```
+
+ Al enviar este formulario, el servidor recibirá algo como:
+
+ ```
+ nombre_usuario=valor_introducido
+```
+
 Etiquetas para la creación de formularios
 ----------------------------------------------
 
@@ -192,12 +211,15 @@ La etiqueta `<input>` en HTML se utiliza para crear campos de entrada en un form
 
 4.  **Botón de radio (Radio Button)**: Permite a los usuarios seleccionar una opción de un conjunto de opciones mutuamente excluyentes.
 
+  * **OJO**: En un grupo de botones de opción (`<input type="radio">` ), el atributo **_name_** se usa para agruparlos. Solo un botón dentro del mismo grupo puede ser seleccionado a la vez.
+
 ```
    <input type="radio" id="opcion1" name="opcion" value="opcion1">
    <label for="opcion1">Opción 1</label><br>
    <input type="radio" id="opcion2" name="opcion" value="opcion2">
    <label for="opcion2">Opción 2</label>
 ```
+
 
 5.  **Botón (Button)**: Crea un botón que puede utilizarse para enviar un formulario o realizar otras acciones mediante JavaScript.
 
