@@ -342,14 +342,14 @@ En la siguiente tabla se muestran algunos símbolos y su correspondiente código
 
 |Símbolo|Código decimal|Entidad |
 |-------|--------------|--------|
-|&      |&#38;         |&amp;   |
-|<      |&#60;         |&lt;    |
-|“      |&#34;         |&quot;  |
-|>      |&#62;         |&gt;    |
-|©      |&#169;        |&copy;  |
-|÷      |&#247;        |&divide;|
-|€      |&#8364;       |&euro;  |
-|←      |&#8592        |&larr;  |
+|&      |`&#38;`         |`&amp;`   |
+|<      |`&#60;`         |`&lt;`    |
+|“      |`&#34;`         |`&quot;`  |
+|>      |`&#62;`         |`&gt;`    |
+|©      |`&#169;`        |`&copy;`  |
+|÷      |`&#247;`        |`&divide;`|
+|€      |`&#8364;`       |`&euro;`  |
+|←      |`&#8592`        |`&larr;`  |
 
 
 Aquí puedes ver una tabla ASCII estándar con los códigos y los nombres de las entidades en HTML: [ascii.cl/es/codigos-html.htm](https://ascii.cl/es/codigos-html.htm). En el siguiente enlace puedes ver más símbolos especiales [webusable.com/CharsExtendedTable.htm](http://www.webusable.com/CharsExtendedTable.htm)
